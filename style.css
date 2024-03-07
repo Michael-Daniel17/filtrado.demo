@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    overflow: auto;
+    display: flex;
+    padding: 20px;
+}
+
+nav li {
+    margin: 0 10px;
+    padding: 10px 20px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+}
+
+nav li.active {
+    background-color: #46a2fd;
+    color: #fff;
+    
+}
+
+nav li.active:hover {
+    background-color: #69b3fb;
+}
+
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 80%;
+    margin:20px auto;  
+}   
+
+.peliculas .peliculas-card {
+    margin: auto;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.peliculas img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.peliculas .mensaje {
+    grid-column: 1/4;
+    margin: auto;
+    width: 350px;
+    background-color: red;
+    padding: 1rem ;
+    text-align: center;
+    color: white;
+   
+}
+
+.info-peli {
+    padding: 10px;
+}
+
+.info-peli p {
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.info-peli span {
+    font-weight: 100;
+}
+
+.info-peli .calificacion i {
+    color: gold;
+}
+
+.btns-info {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px 2px;
+}
+
+.btns-info button {
+    border-radius:3px;
+    background-color: #46a2fd;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btns-info .mas-info {
+    background-color: transparent;
+    color: #000;
+    border: solid thin #46a2fd;
+}
+
+.btns-info .mas-info:hover {
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+}
+
+
+.btns-info button:hover {
+    background-color: #58abfd;
+}
